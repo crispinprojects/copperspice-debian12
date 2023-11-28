@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle" stdset="0">
+   <string>Hello World</string>
+  </property>
+  <property name="geometry" stdset="0">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>471</width>
+    <height>256</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text" stdset="0">
+           <string>Name:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="orientation" stdset="0">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelName">
+        <property name="text" stdset="0">
+         <string>Your names is : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text" stdset="0">
+         <string>PressMe</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry" stdset="0">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>471</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title" stdset="0">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text" stdset="0">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
